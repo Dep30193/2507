@@ -1,0 +1,54 @@
+body{
+  padding:0;  margin: 0 0 0 0;
+  background-image: url("tech.png"); 
+  color:black;
+  background-size: cover;
+}
+
+
+.form{ 
+  border: 1px solid white; 
+  border-radius: 10px;
+  background: #f1f1f1;
+  width:40%;
+  min-width: 400px;
+  position: absolute; 
+  top: 50%; left: 50%;
+  transform: translate(-50%,-40%);
+  padding: 30px 35px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 0 20px gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form h2{
+  margin-top: 0px;
+}
+.info{
+  border: 1px solid black;  
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 5px;
+}
+.info label{
+  display: block;
+  text-align: left;
+  color: #333;
+  text-transform: capitalize;
+  font-size: 10pt;
+}
+.info input, .info textarea{
+  width:100%; border: none; 
+  background: none; outline:none;
+}
+.submit{
+  margin: 20px auto 0px auto;  
+  display:block;  font-size: 13pt;
+  background: cornflowerblue;
+  text-transform: capitalize;
+  padding:5px 0;  border-radius: 12px;
+  cursor: pointer;width:60%;
+}
+#push{
+  height:100vh;
+}

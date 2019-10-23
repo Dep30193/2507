@@ -1,0 +1,226 @@
+html{
+    font-size: 62.5%;
+    height: 100%;   /*position relative+absolute
+    min-height 100% to remains pushing footer to bottom, worked on little/larger content*/
+}
+.mobile{display: none;}
+body{ 
+    background:rgba(73, 69, 69, 0.301);
+    color:black;
+    padding:0; 
+    margin:0;
+    position: relative; min-height: 100%;  
+      /*position relative+absolute
+    min-height 100% to remains pushing footer to bottom, worked on little/larger content*/
+}
+
+.wrapper{
+  /* resolution */
+  max-width:91%;
+  min-height: 90vh;
+  padding: 20px 20px 20px;
+  /* color */
+  background: white ; 
+}
+.navbgimg ul{
+  background-image: url('tech2.png');
+  background-size: 100%;
+  position: relative;
+  max-height:80px;
+}
+
+.navTab{
+
+    background: black;
+    margin:0;
+}
+.navTab li{
+  display:inline-block;
+  margin: 30px 45px;  
+  font-size: 2.3rem;
+}
+.navTab a{
+  text-decoration: none; color:white;
+}
+.navTab a:hover{
+  text-decoration: underline; color: gray;
+}
+
+/* temporary content */
+p{font-size: 2rem;}
+
+.jumpTop img{
+  /* shape */
+  width: 55px;height:44px;
+  border-radius: 50%;
+  border: 3px solid gray;
+  /* positioning */
+  position: fixed;z-index: 1;
+  bottom: 5%; right: 1%;
+}
+#footer{
+  background-image: url('tech2_rev.png');
+  background-size: 100%;
+  color:black; 
+  text-align: center;
+
+  /* positioning */
+  position: absolute;
+  bottom:0;
+  height:60px;   width:100%; 
+  padding:5px;
+ 
+}
+#footer h4,#h42{
+  display: inline-block;
+  font-size: 1.75rem;
+}
+#h42{margin-left:10px;}
+#push{
+  height:50px;
+}
+
+
+/* -----------    Recommend Section    -----------*/
+.nowrap {   
+  min-height: 100vh;
+
+  background: url('rec.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  color:white;
+
+  /* positioning */
+  margin-top: 10px; 
+  margin-bottom: 10px;
+  text-align: center;
+}
+#pushForRec{
+  height: 70px;
+}
+.form{  
+  background: radial-gradient(rgb(245, 243, 243),rgba(255, 255, 255, 0.767),silver);
+
+  font-size: 1.5rem;
+  border-radius: 5%;
+  color:black;
+  
+  margin: 10px auto;
+  width:30%;
+  max-width: 70%;
+  /* positioning */
+  position: absolute; 
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 10px 30px;
+  }
+.info{
+  margin-top:10px; padding: 10px;
+  border: 1px solid black; 
+  border-radius: 8px;
+}
+.info label{
+  display: block;text-align: left; 
+  font-size: 1.4rem;
+  
+}
+.info input, .info textarea{
+  width: 100%;
+  margin-top:15px;
+  border: none; 
+  background: none; 
+  outline:none;
+}
+.info textarea{
+  height: 30px;
+  max-height: 100px;
+  max-width: 100%;
+}
+.submit{
+  margin: 15px auto 0 auto;
+   font-size:1.5rem; 
+   box-shadow: gray 0 0 15px;
+  background: rgb(134, 172, 228);
+  border-radius: 24px;
+  width:40%;
+  cursor: pointer;
+}
+
+    
+input:required,
+textarea:required {
+  border-color: red !important;
+}
+
+
+/* -----------------------media query----------------- */
+@media screen and (max-width:1068px){
+  .form{width:50%;}
+}
+@media screen and (max-width:723px){
+  .form{width:70%;}
+}
+
+@media screen and (max-width: 816px){
+  .navTab li{
+    margin: 20px 30px;
+  }
+}
+@media screen and (max-width: 697px){
+  .navTab li{
+    margin: 20px 15px;
+  }
+}
+@media screen and (max-width: 577px){
+  
+  .navTab li:nth-child(n){
+    font-size: 2rem; 
+  }
+  .navTab li:first-child{
+    margin-left:0;
+  }
+}
+@media screen and (max-width:574px){
+  #h42{
+    color:white;
+  }
+}
+
+/* firefox */
+@media screen and (max-width: 489px){
+
+  .navTab li:first-child{
+    margin-left:-30px;
+    
+  }
+  .navTab li:nth-child(n){
+    margin: 5px;
+    padding:5px;
+  }
+
+/* footerR for rec section */
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display:block;
+  }
+  .mobile div{
+    display: block;
+    text-align: left;
+    margin-left:80px;
+    font-size: 1.75rem;
+  }
+
+  @media screen and (max-width:340px){
+    .mobile div{
+      margin-left: 20px;
+    }
+  }  
+  
+
+}
+
